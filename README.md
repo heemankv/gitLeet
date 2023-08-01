@@ -1,3 +1,12 @@
+This repo inhouse the code that take's user's all the solution from Leetcode and transfers them to Github
+my solutions using this repo will be found here : https://github.com/heemankv/LeetCode-Solutions.git
+**Usage**
+use .env in root folder that will have 
+```
+COOKIE = abcdef
+```
+extract cookie from network tab
+
 
 **Using the Feynman technique**
 
@@ -84,3 +93,18 @@ ensure to make is publicly available after removing personal info like CSRF toke
 Update: 31st July 2023
 Although my code is ready till it's last 95% I am unable to understand why it's failing for this :
 xD this was a simple problem wherein my solution on github was actually null and my type assertion was failing for the same, handled using assertiong validation , could have used proper error handling
+
+**Final Thoughs** 
+This is my first code in GoLang, judging by that, It's pretty decent.
+I could have made the code more error proof.
+Scalibility issues:
+  1) it takes codes from leetcode edit code tab rather than all submitted solutions tab
+    this design flaw let the code not get solutions for approximately 40+ questions
+    it should have taken the last submitted solution
+  2) a usual practice in DSA doesn't end at leetcode, it expands to other platforms like gfg, hackerrank, codechef, codeforces, etc
+    this code is not scalable to other platforms
+  3) the code makes two seperate calls 1 for question decription the other for code, this can be clubbed into one call if we use the graphql api properly
+
+
+
+Let's Keep Building !!!
