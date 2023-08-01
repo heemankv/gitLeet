@@ -205,7 +205,7 @@ func main() {
 	questions, total := getListOfAllQuestionsSolved(skip, limit, status, cookie)
 	fmt.Println("Found" , total, " Questions")
 	var finalValue []map[string]interface{}
-	for i := 110; i < total ; i++ {
+	for i := 0; i < total ; i++ {
 		input := questions[i].(map[string]interface{})
 		submissionTime, solution, validation := getQuestionSolution(lang, input["frontendQuestionId"].(string), cookie)
 		if(!validation){
